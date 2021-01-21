@@ -15,11 +15,12 @@ public class ParkingLot {
   }
 
   public void setNumCars (int theNumCars) {
+    if (theNumCars >= 0 && theNumCars <= MAX_CARS)
     numCars = theNumCars;
   }
 
   public String toString() {
-    return "The number of cars is " + numCars;
+    return "Number of cars is " + numCars;
   }
 
   public boolean equals(Object other) {
